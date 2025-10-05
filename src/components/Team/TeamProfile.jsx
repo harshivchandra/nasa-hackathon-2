@@ -41,14 +41,14 @@ export default function TeamProfile() {
     {
       name: "Bayan Alqassab",
       image: bayan,
-      role: "Design & UI/UX",
+      role: "3D Design & UX",
       brief:
         "Pursuing a Master’s in Engineering Design and Innovation at NUS, I excel in industrial design, 3D printing, sustainable innovation and creativity.",
     },
     {
       name: "Julianna Klek",
       image: jules,
-      role: "System Architect & Analyst",
+      role: "System Architect",
       brief:
         "LSE alum with deep-tech startup and BCG experience, pursuing MSc Engineering Design at NUS. Marathon swimmer.",
     },

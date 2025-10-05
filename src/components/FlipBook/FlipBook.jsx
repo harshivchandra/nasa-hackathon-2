@@ -28,7 +28,7 @@ const Flipbook = () => {
   return (
     <div className="flipbook-container">
       <div className="welcome-text">
-        Welcome to Rovie's Adventure
+        Flip through Rovie's Story ...
       </div>
       <div className="flipbook" ref={bookRef}>
         <div className="hard">Story of Rovie</div>

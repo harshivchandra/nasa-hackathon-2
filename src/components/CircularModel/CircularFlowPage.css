@@ -79,6 +79,12 @@
     cursor: pointer;
 }
 
+.modal-content p,
+ul,
+td {
+    color: #ffffff;
+}
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -142,6 +148,10 @@
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(190, 95, 63, 0.3);
+}
+
+.box-text {
+    color: #ffffff;
 }
 
 .modal-overlay {

@@ -5,6 +5,7 @@ import story2 from "../../assets/story/2.png";
 import story3 from "../../assets/story/3.png";
 import story4 from "../../assets/story/4.png";
 import story5 from "../../assets/story/5.png";
+import story6 from "../../assets/story/6.png";
 
 const Flipbook = () => {
   const bookRef = useRef(null);
@@ -46,6 +47,7 @@ const Flipbook = () => {
           { num: 3, src: story3 },
           { num: 4, src: story4 },
           { num: 5, src: story5 },
+          { num: 6, src: story6 },
         ].map(({ num, src }) => (
           <div className="page" key={num}>
             <img src={src} alt={`Page ${num}`} />

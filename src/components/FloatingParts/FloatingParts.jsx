@@ -7,14 +7,18 @@ import nylonRope from "../../assets/parts/nylonRope.png";
 import Modal from "react-modal";
 import boom from "../../assets/parts/boom.png";
 import rod from "../../assets/parts/rod.png";
-import foam from "../../assets/parts/foam.png";
+import gasket from "../../assets/parts/gasket.png";
 
-import e_boom from "../../assets/energy/e-boom.png"
-import e_mast from "../../assets/energy/e-mast.png"
-import e_thinfoam from "../../assets/energy/e-thinfoam.png"
-import e_threeway from "../../assets/energy/e-threeway.png"
-import e_tripod from "../../assets/energy/e-tripod.png"
-import e_rope from "../../assets/energy/e-rope.png"
+import e_boom from "../../assets/energy/e-boom.png";
+import e_mast from "../../assets/energy/e-mast.png";
+import e_thinfoam from "../../assets/energy/e-thinfoam.png";
+import e_threeway from "../../assets/energy/e-threeway.png";
+import e_tripod from "../../assets/energy/e-tripod.png";
+import e_rope from "../../assets/energy/e-rope.png";
+
+import w_tripod from "../../assets/parts/w_tripod.png";
+import w_foam from "../../assets/parts/w_foam.png";
+import w_rope from "../../assets/parts/w_rope.png";
 
 Modal.setAppElement("#root");
 
@@ -32,11 +36,19 @@ const Parts = () => {
         "Source: 3D cube structure from habitat construction.",
         "Material: Large Aluminum Struts",
       ],
+      w_image: pole,
       detailedInfo: {
         manufacturingMethod: "Guillotine shear cutting",
         tool: "Guillotine shear cutter machine",
-        toolUsage: "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
-        energyToValue: <img src={e_mast} alt="Energy to Value - Mast" className="energy-value-img" />,
+        toolUsage:
+          "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
+        energyToValue: (
+          <img
+            src={e_mast}
+            alt="Energy to Value - Mast"
+            className="energy-value-img"
+          />
+        ),
         timeTaken: "5-8min",
         rStrategies: "R3, R4, R5, R6",
       },
@@ -50,11 +62,19 @@ const Parts = () => {
         "Source: 3D cube structure from habitat construction.",
         "Material: Aluminum",
       ],
+      w_image: w_tripod,
       detailedInfo: {
         manufacturingMethod: "Guillotine shear cutting",
         tool: "Guillotine shear cutter machine",
-        toolUsage: "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
-        energyToValue: <img src={e_tripod} alt="Energy to Value - Tripod" className="energy-value-img" />,
+        toolUsage:
+          "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
+        energyToValue: (
+          <img
+            src={e_tripod}
+            alt="Energy to Value - Tripod"
+            className="energy-value-img"
+          />
+        ),
         timeTaken: "12-20min",
         rStrategies: "R3, R4, R5, R6",
       },
@@ -66,11 +86,19 @@ const Parts = () => {
       description:
         "Used to secure multiple components in the antenna assembly.",
       specs: ["Source: Packaging Waste", "Material: Nylon "],
+      w_image: w_rope,
       detailedInfo: {
         manufacturingMethod: "nil",
         tool: "Sccissors/ruler/pen-knife",
-        toolUsage: "Secure the assembly strucuture by using the rope from mast middle section to a martian rock on the ground, spaced 120 degrees apart ",
-        energyToValue: <img src={e_rope} alt="Energy to Value - Nylon Rope" className="energy-value-img" />,
+        toolUsage:
+          "Secure the assembly strucuture by using the rope from mast middle section to a martian rock on the ground, spaced 120 degrees apart ",
+        energyToValue: (
+          <img
+            src={e_rope}
+            alt="Energy to Value - Nylon Rope"
+            className="energy-value-img"
+          />
+        ),
         timeTaken: "5-8min",
         rStrategies: "R2, R3, R5, R7",
       },
@@ -78,15 +106,23 @@ const Parts = () => {
     {
       id: 4,
       name: "Thin Foam Gaskets",
-      image: foam,
+      image: gasket,
       description:
         "Used for grip and damping of the elements that is slotted through the boom.",
       specs: ["Source: Construction Trash", "Material: Foam"],
+      w_image: w_foam,
       detailedInfo: {
         manufacturingMethod: "Manual Cutting",
         tool: "Sccissors/ruler/pen-knife",
-        toolUsage: " Basic hand tools such as scissors/pen-knife are sufficient cut the material into their defined dimensions",
-        energyToValue: <img src={e_thinfoam} alt="Energy to Value - Thin Foam" className="energy-value-img" />,
+        toolUsage:
+          " Basic hand tools such as scissors/pen-knife are sufficient cut the material into their defined dimensions",
+        energyToValue: (
+          <img
+            src={e_thinfoam}
+            alt="Energy to Value - Thin Foam"
+            className="energy-value-img"
+          />
+        ),
         timeTaken: "5-10min",
         rStrategies: "R2, R3, R5, R7",
       },
@@ -98,11 +134,19 @@ const Parts = () => {
       description:
         "Thermoformed hollow square boom that securely holds the antenna elements in alignment.",
       specs: ["Source: Construction Trash", "Material: Themoplastic"],
+      w_image: pole,
       detailedInfo: {
         manufacturingMethod: "Thermoforming",
         tool: "Thermoplastic sheet, portable heat press machine",
-        toolUsage: "The thermoforming process shapes recycled thermoplastic sheets into the boom structure through controlled heat and pressure. First, the cleaned plastic waste is melted or flattened into uniform sheets, which are then heated until pliable. The softened sheet is draped over or wrapped around a pre-shaped mandrel—such as a square mold representing the boom’s cross-section—and pressed tightly to capture its form and any integrated slots for the antenna elements. Once cooled, the plastic hardens into a rigid, lightweight tube that requires no machining, produces zero microplastic waste, and can be easily remelted for future reuse.",
-        energyToValue: <img src={e_boom} alt="Energy to Value - Boom" className="energy-value-img" />,
+        toolUsage:
+          "The thermoforming process shapes recycled thermoplastic sheets into the boom structure through controlled heat and pressure. First, the cleaned plastic waste is melted or flattened into uniform sheets, which are then heated until pliable. The softened sheet is draped over or wrapped around a pre-shaped mandrel—such as a square mold representing the boom’s cross-section—and pressed tightly to capture its form and any integrated slots for the antenna elements. Once cooled, the plastic hardens into a rigid, lightweight tube that requires no machining, produces zero microplastic waste, and can be easily remelted for future reuse.",
+        energyToValue: (
+          <img
+            src={e_boom}
+            alt="Energy to Value - Boom"
+            className="energy-value-img"
+          />
+        ),
         timeTaken: "20-30min",
         rStrategies: "R3, R5, R6 & R9",
       },
@@ -117,11 +161,19 @@ const Parts = () => {
         "Source: 3D cube structure from habitat construction.",
         "Material: Small Aluminium Struts.",
       ],
+      w_image: pole,
       detailedInfo: {
         manufacturingMethod: "Guillotine shear cutting",
         tool: "Guillotine shear cutter machine",
-        toolUsage: "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
-        energyToValue: <img src={e_threeway} alt="Energy to Value - Three Way Elements" className="energy-value-img" />,
+        toolUsage:
+          "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
+        energyToValue: (
+          <img
+            src={e_threeway}
+            alt="Energy to Value - Three Way Elements"
+            className="energy-value-img"
+          />
+        ),
         timeTaken: "12-18min",
         rStrategies: "R3, R4, R5, R6",
       },
@@ -161,11 +213,22 @@ const Parts = () => {
               <p className="description">{selectedPart.description}</p>
               <div className="specifications">
                 <h3>Material Composition</h3>
-                <ul>
-                  {selectedPart.specs.map((spec, index) => (
-                    <li key={index}>{spec}</li>
-                  ))}
-                </ul>
+                <div className="specifications-grid">
+                  <div className="spec-left">
+                    <ul>
+                      {selectedPart.specs.map((spec, index) => (
+                        <li key={index}>{spec}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="spec-right">
+                    <img
+                      src={selectedPart.w_image}
+                      alt={`${selectedPart.name} visual`}
+                      className="spec-image"
+                    />
+                  </div>
+                </div>
               </div>
               <button
                 className="dive-deep-btn"

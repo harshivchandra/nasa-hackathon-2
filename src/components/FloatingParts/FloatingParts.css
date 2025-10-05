@@ -186,6 +186,27 @@
     color: rgba(190, 95, 63, 0.9);
 }
 
+.specifications-grid {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.spec-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spec-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(190, 95, 63, 0.2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
 .dive-deep-btn {
     margin-top: 20px;
     padding: 12px 24px;
@@ -432,6 +453,15 @@
 
     .info-row h3 {
         font-size: 1.1rem;
+    }
+
+    .specifications-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .spec-right {
+        text-align: center;
     }
 }
 

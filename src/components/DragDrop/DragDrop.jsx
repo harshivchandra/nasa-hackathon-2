@@ -81,11 +81,11 @@ const DropZone = ({ onDrop, onDragOver, placedParts, targetImage }) => {
 export default function DragDrop() {
   const parts = [
     { id: 1, name: "Vertical Pole", src: pole },
-    { id: 2, name: "Boom", src: boom },
+    { id: 2, name: "Boom & Washer", src: boom },
     { id: 3, name: "Nylon Ropes", src: rope },
     { id: 4, name: "Antenna Rods", src: rod },
     { id: 5, name: "Tripod", src: tripod },
-    { id: 6, name: "Waste Anchor", src: anchor },
+    { id: 6, name: "Waste Anchor (Rock)", src: anchor },
   ];
 
   const [placedParts, setPlacedParts] = useState([]);

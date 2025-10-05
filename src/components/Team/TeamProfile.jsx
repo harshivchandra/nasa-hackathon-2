@@ -48,7 +48,7 @@ export default function TeamProfile() {
     {
       name: "Julianna Klek",
       image: jules,
-      role: "System Architect,
+      role: "System Architect",
       brief:
         "LSE alum with deep-tech startup and BCG experience, pursuing MSc Engineering Design at NUS. Marathon swimmer.",
     },

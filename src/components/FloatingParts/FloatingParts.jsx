@@ -44,7 +44,7 @@ const Parts = () => {
           "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
         energyToValue: (
           <img
-            src={e_mast}
+            src={e_tripod}
             alt="Energy to Value - Mast"
             className="energy-value-img"
           />
@@ -169,7 +169,7 @@ const Parts = () => {
           "The guillotine shear is a simple, low-energy cutting tool ideal for shaping recycled aluminum struts on Mars. To use it, the strut is first positioned and clamped securely beneath the stationary upper blade. A manual lever or servo-assisted arm is then pulled downward, driving the blade in a single controlled motion to shear cleanly through the aluminum with minimal force. The cut produces one solid piece and a smooth edge—no dust, sparks, or micro-waste—making it safe for enclosed habitats and fully compatible with in-situ recycling.",
         energyToValue: (
           <img
-            src={e_threeway}
+            src={e_tripod}
             alt="Energy to Value - Three Way Elements"
             className="energy-value-img"
           />
